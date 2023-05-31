@@ -14,7 +14,7 @@ function Navigation() {
         <Link
           className="navbar-brand"
           to={`/`}
-          style={{ textDecoration: "none" }}
+          style={{ textDecoration: "none", color: "purple" }}
         >
           Home
         </Link>
@@ -35,7 +35,7 @@ function Navigation() {
               <Link
                 className="nav-link active"
                 to={`/posts`}
-                style={{ textDecoration: "none" }}
+                style={{ textDecoration: "none", color: "purple" }}
               >
                 Posts
               </Link>
@@ -44,7 +44,7 @@ function Navigation() {
               <Link
                 className="nav-link active"
                 to={`/add`}
-                style={{ textDecoration: "none" }}
+                style={{ textDecoration: "none", color: "purple" }}
               >
                 Add Post
               </Link>

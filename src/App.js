@@ -5,6 +5,7 @@ import AppPosts from "./components/AppPosts";
 import SinglePost from "./components/SinglePost";
 import Welcome from "./components/Welcome";
 import Edit from "./pages/Edit";
+import AddComment from "./components/AddComment";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Route path="/posts/:id" element={<SinglePost />}></Route>
       <Route path="/edit/:id" element={<Edit />}></Route>
       <Route path="/add" element={<AddPost />}></Route>
+      <Route path="/comment" element={<AddComment />}></Route>
+
     </Routes>
   );
 }

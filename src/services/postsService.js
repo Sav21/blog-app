@@ -5,6 +5,11 @@ export const getPosts = () => {
 export const postPosts = (title, text) => {
   return API.post("/posts", { title, text });
 };
+
+export const addComment = (comment, postId) => {
+  return API.post(`/posts/${id}/comments`, { title, text });
+};
+
 export const getPostById = (id) => {
   return API.get(`/posts/${id}`);
 };

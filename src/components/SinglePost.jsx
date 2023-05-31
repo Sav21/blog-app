@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { getPostById } from "../services/postsService";
+import AddComment from "./AddComment";
 
 const SinglePost = ({post, deleteAPost}) => {
   return (
@@ -11,6 +12,7 @@ const SinglePost = ({post, deleteAPost}) => {
                 <Link className="btn btn-primary" to={`/edit/${post.id}`}>Edit Post </Link>
                 <button className="btn btn-primary" onClick={() => deleteAPost(post.id)}> Delete post </button>
             </div>
+            <AddComment/>
       </div>  
   )
 };

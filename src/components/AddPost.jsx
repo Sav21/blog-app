@@ -74,7 +74,6 @@ const AddPost = ({ index }) => {
             onChange={handleInputChange}
             type="text"
             className="form-control"
-            placeholder="title"
           />
           <label>Title</label>
         </div>
@@ -85,7 +84,6 @@ const AddPost = ({ index }) => {
             onChange={handleInputChange}
             type="text"
             className="form-control"
-            placeholder="text"
           />
           <label>Text</label>
         </div>
